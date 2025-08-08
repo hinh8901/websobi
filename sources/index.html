@@ -1,12 +1,908 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./global.css">
-</head>
-<body>
-  <p class="text-9xl text-red-300">Hello Vite!</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./global.css" />
+  </head>
+  <body>
+    <header
+      class="sticky bg-[#ffffffcf] backdrop-blur-xs top-0 left-0 flex items-center justify-between px-4 shadow-[0px_2px_0px_rgb(17_17_26_/_7%)] z-10"
+    >
+      <a href="/">
+        <img
+          src="./public/assets/images/websogi.webp"
+          alt="websoli logo"
+          class="max-w-[160px]"
+        />
+      </a>
+
+      <nav
+        class="mb-menu bg-white absolute w-full h-0 overflow-hidden top-full left-0 duration-300 ease-out flex flex-col shadow-[0px_1px_0px_rgb(17_17_26_/_7%)]"
+      >
+        <div class="flex flex-col border-t border-[#e7e7e7]">
+          <a href="/" class="nav-item">Trang chủ</a>
+          <a href="" class="nav-item">Giao diện web</a>
+          <a href="" class="nav-item">Bảng giá</a>
+          <a href="" class="nav-item">Dự án</a>
+          <a href="" class="nav-item">Dịch vụ</a>
+          <a href="" class="nav-item">Tin tức</a>
+          <a href="" class="nav-item">Liên hệ</a>
+          <a href="" class="nav-item">Công vụ</a>
+        </div>
+        <a href="" class="bg-primary text-white text-sm p-4"
+          >Đăng ký tư vấn miễn phí</a
+        >
+      </nav>
+
+      <button class="mb-menu-trigger">
+        <span class="mb-menu-item"></span>
+        <span class="mb-menu-item"></span>
+        <span class="mb-menu-item"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="container py-4 flex flex-col gap-y-6">
+        <div class="flex flex-col gap-y-2">
+          <div class="flex items-start gap-x-4">
+            <img
+              src="./public/assets/images/khachhang-canhan.png"
+              class="w-16 object-contain"
+            />
+            <div class="flex flex-col gap-y-3">
+              <h3 class="text-dark text-xl font-se">Đăng ký tư vấn</h3>
+              <p class="text-xs text-black leading-5">
+                Tư vấn giải pháp và vận hành phần mềm theo nhu cầu mô hình vận
+                hành khách hàng, bảo mật an toàn thông tin cho quý khách
+              </p>
+            </div>
+          </div>
+          <a
+            href=""
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+          >
+            <span>Xem thêm</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-secondary"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-y-2">
+          <div class="flex items-start gap-x-4">
+            <img
+              src="./public/assets/images/naptien6.png"
+              class="w-16 object-contain"
+            />
+            <div class="flex flex-col gap-y-3">
+              <h3 class="text-dark text-xl font-se">Cung cấp giải pháp</h3>
+              <p class="text-xs text-black leading-5">
+                Cung cấp giải pháp bán hàng, quản lý kho hàng
+              </p>
+            </div>
+          </div>
+          <a
+            href=""
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+          >
+            <span>Xem thêm</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-secondary"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-y-2">
+          <div class="flex items-start gap-x-4">
+            <img
+              src="./public/assets/images/napvi.png"
+              class="w-16 object-contain"
+            />
+            <div class="flex flex-col gap-y-3">
+              <h3 class="text-dark text-xl font-se">
+                Chuyển đổi số doanh nghiệp
+              </h3>
+              <p class="text-xs text-black leading-5">
+                Doanh nghiệp bạn đang rườm rà quy trình, muốn tự động hóa, giảm
+                bớt rủi ro, tăng mức đo lường nâng cấp quy mô
+              </p>
+            </div>
+          </div>
+          <a
+            href=""
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+          >
+            <span>Xem thêm</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-secondary"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-y-2">
+          <div class="flex items-start gap-x-4">
+            <img
+              src="./public/assets/images/naptien3.png"
+              class="w-16 object-contain"
+            />
+            <div class="flex flex-col gap-y-3">
+              <h3 class="text-dark text-xl font-se">Thiết kế website</h3>
+              <p class="text-xs text-black leading-5">
+                Thiết kế website theo nhu cầu khách hàng
+              </p>
+            </div>
+          </div>
+          <a
+            href=""
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+          >
+            <span>Xem thêm</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-secondary"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="container py-4 bg-[url('./public/assets/images/bg-loiich.jpg')] bg-no-repeat bg-cover"
+      >
+        <div class="bg-[#ffffff7d] backdrop-blur-xs">
+          <h3 class="p-8">
+            <span class="text-lg font-light text-dark"
+              >Tiện ích khi sử dụng</span
+            >
+            <span class="block text-2xl">Dịch vụ Web Sobiz</span>
+            <span class="block w-10 h-0.5 rounded-xs bg-primary mt-2"></span>
+          </h3>
+          <div class="bg-[#f7f7f7] p-8 flex flex-col gap-y-6">
+            <div class="flex gap-x-1.5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#78B774"
+                class="size-8 shrink-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <p class="text-sm text-dark">
+                Kết nối với hơn 20 đơn vị vận chuyển và cổng thanh toán online
+              </p>
+            </div>
+
+            <div class="flex gap-x-1.5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#78B774"
+                class="size-8 shrink-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <p class="text-sm text-dark">
+                <span class="font-semibold">Miễn phí</span> sử dụng bộ công cụ
+                của websobiz trong lĩnh vực đầu tư bất động sản
+              </p>
+            </div>
+
+            <div class="flex gap-x-1.5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#78B774"
+                class="size-8 shrink-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <p class="text-sm text-dark">
+                <span class="font-semibold">Miễn phí</span> tư vấn và cung cấp
+                giải pháp chuyển đổi số, phù hợp nhu cầu doanh nghiệp của quý
+                khách
+              </p>
+            </div>
+
+            <div class="flex gap-x-1.5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#78B774"
+                class="size-8 shrink-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <p class="text-sm text-dark">
+                Cung cấp các giải pháp mở rộng doanh nghiệp, đầu tư & kinh doanh
+                công nghệ 4.0
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pt-8">
+        <div class="flex flex-col gap-y-5">
+          <div class="aspect-[16/9] relative">
+            <img
+              src="./public/assets/images/img3_thumbvideo-600x350.jpg"
+              class="w-full h-full object-cover"
+              alt="websobiz"
+            />
+            <div
+              class="absolute w-full h-full top-0 left-0 flex items-center justify-center cursor-pointer"
+            >
+              <img
+                src="./public/assets/images/btn-play1.png"
+                alt="play 1"
+                class="animate-spin animate-bounce"
+              />
+              <img
+                src="./public/assets/images/btn-play2.png"
+                alt="play 2"
+                class="absolute"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-y-5">
+            <h3 class="text-2xl text-dark">
+              Tư vấn và kết nối tạo nguồn vốn
+              <span class="block text-lg font-light"
+                >Kích hoạt dòng tài chính tiếp sức kinh doanh</span
+              >
+            </h3>
+            <p class="text-sm text-dark">
+              Hỗ trợ quý khách tìm nguồn vốn kinh doanh từ tín dụng và thế chấp
+              giới thiệu đến các ngân hàng uy tín, giải đáp thắc mắc tài chính
+              trong lúc kinh doanh bị thiếu vốn.
+            </p>
+          </div>
+
+          <div class="flex justify-between gap-y-8 items-start">
+            <div
+              class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
+            >
+              <p class="text-secondary text-xl font-bold text-center">
+                1 Nghìn
+              </p>
+              <span class="text-muted text-xs text-center"
+                >Ví điện tử kích hoạt</span
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
+            >
+              <p class="text-secondary text-xl font-bold text-center">
+                5 Nghìn
+              </p>
+              <span class="text-muted text-xs text-center"
+                >Lượt vận đơn/ngày được tin dùng</span
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
+            >
+              <p class="text-secondary text-xl font-bold text-center">
+                10 Tỉ VND
+              </p>
+              <span class="text-muted text-xs text-center"
+                >Giao dịch từ hệ thống thanh toán/tháng</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pt-8">
+        <h2
+          class="text-secondary text-lg pl-3 relative border-b border-primary before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-1.5 before:bg-primary"
+        >
+          <a href="" class="hover:text-primary">Thông báo & sự kiện</a>
+        </h2>
+
+        <div class="flex flex-col gap-10 py-4">
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-full aspect-[16/9]">
+              <img
+                src="./public/assets/images/website ban hang online - websobi-350x200.png"
+                alt="websobi"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div class="mt-2 flex flex-col gap-y-1">
+              <h4
+                class="uppercase font-bold text-lg line-clamp-2 text-dark hover:text-primary"
+                title="Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để tiết kiệm chi phí"
+              >
+                <a href="">
+                  Tạo website bán hàng online với ngân sách hạn chế: Bí quyết để
+                  tiết kiệm chi phí
+                </a>
+              </h4>
+              <p class="flex flex-col text-muted text-xs">
+                <span>websobi.com</span>
+                <span>22/10/2024</span>
+              </p>
+              <p class="text-sm line-clamp-2 text-muted">
+                Trong thời đại công nghệ số hiện nay, việc tạo website bán hàng
+                online là một trong những bước quan...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-4 bg-[#F8F8F8]">
+        <h3 class="text-2xl text-dark">
+          Hỗ trợ quý khách hàng
+          <span class="text-dark block font-light text-lg">
+            Tìm đơn vị cung cấp sản phầm & tài chính phù hợp, liên kết hơn 34
+            đơn vị ngân hàng và đối tác nhà cung cấp
+          </span>
+        </h3>
+        <ul class="mt-4 flex flex-wrap gap-4">
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/abb.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/acb.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/agri.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/baca.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/baoviet.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/bidv.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/donga.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/exim.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/gp.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/hd.png" alt="" />
+            </a>
+          </li>
+          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
+            >
+              <img src="./public/assets/images/jcb.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="py-8">
+      <div class="flex flex-col container">
+        <h3 class="text-dark text-sm font-semibold">
+          Giải pháp website và chuyển đổi số doanh nghiệp
+        </h3>
+        <div class="mt-2">
+          <p class="flex flex-col gap-1 text-xs text-dark">
+            <span>- Cở sở 1: 189 Nguyễn Thị Minh Khai, Q.1, TP.HCM</span>
+            <span>Số điện thoại: 0903.388.899</span>
+            <span>Thứ 2 - Thứ 6: 8h30 - 17h30</span>
+            <span>Thứ 7 - Chủ nhật: 9h30 - 17h00</span>
+            <span
+              >Sức khoẻ và làm đẹp, chuyên cung cấp các sản phẩm tốt nhất cho
+              quý khách hàng.</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 flex flex-col gap-6 container">
+        <div>
+          <h3 class="text-dark uppercase text-sm font-semibold">
+            Dịch vụ thiết kế website
+          </h3>
+          <ul>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Thiết kế webiste bất động sản</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Thiết kế webiste bất nội thất</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Thiết kế webiste bán hàng</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Thiết kế webiste du lịch</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Thiết kế webiste xây dựng</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-dark uppercase text-sm font-semibold">
+            Dịch vụ khác
+          </h3>
+          <ul>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Dịch vụ webmaster</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Dịch vụ SEO</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Dịch vụ thiết kế</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Dịch vụ tư vấn chuyển đổi số</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-dark uppercase text-sm font-semibold">Giới thiệu</h3>
+          <ul>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Liên hệ</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Về chúng tôi</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Tuyển dụng</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Đối tác của chúng tôi</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-dark hover:text-primary text-sm"
+                >Video về chúng tôi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-[1px] w-full bg-[#f1f1f2] my-6"></div>
+
+      <div class="container">
+        <p class="text-muted text-sm">Bản quyền thuộc quyền sở hữu của websobi.com</p>
+        <div class="flex flex-wrap gap-4 mt-3">
+          <img class="w-12" src="./public/assets/images/seal_125-50_blue.png" alt="">
+          <img class="w-12" src="./public/assets/images/credibility_pci-logo.png" alt="">
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      ;(function addMobileMenuEvent() {
+        document
+          .querySelector(".mb-menu-trigger")
+          .addEventListener("click", function () {
+            const mobileMenuTrigger = document.querySelector(".mb-menu-trigger")
+            const mobileMenu = document.querySelector(".mb-menu")
+            const isOpen = mobileMenu?.classList?.contains("mb-menu-open")
+
+            if (isOpen) {
+              mobileMenuTrigger?.classList?.remove("mb-menu-trigger-active")
+              mobileMenu?.classList?.remove("mb-menu-open")
+            } else {
+              mobileMenuTrigger?.classList?.add("mb-menu-trigger-active")
+              mobileMenu?.classList?.add("mb-menu-open")
+            }
+          })
+      })()
+    </script>
+  </body>
 </html>

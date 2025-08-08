@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #c2a147;
+  --color-black: #1a1a1a;
+  --color-dark: #333333;
+  --color-secondary: #315C98;
+  --color-accent: "#78B774";
+  --color-muted: "#555";
+
+  --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+  font-family: var(--font-primary);
+}
+
+@layer utilities {
+  .container {
+    @apply px-4
+  }
+
+  .mb-menu-open {
+    height: calc(100dvh - 77px);
+  }
+
+  .mb-menu-trigger {
+    @apply w-8 cursor-pointer relative select-none;
+  }
+
+  .mb-menu-trigger .mb-menu-item {
+    @apply block h-[2px] bg-[#888] rounded-sm my-1;
+    transition: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  .mb-menu-item:first-child {
+    width: 50%;
+  }
+
+  .mb-menu-item:nth-child(2) {
+    width: 100%;
+  }
+
+  .mb-menu-item:last-child {
+    width: 75%;
+  }
+
+  .mb-menu-trigger-active .mb-menu-item:first-child {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(2px, -1px);
+  }
+
+  .mb-menu-trigger-active .mb-menu-item:nth-child(2) {
+    transform-origin: top;
+    transform: rotatez(-45deg);
+  }
+
+  .mb-menu-trigger-active .mb-menu-item:last-child {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(13px, -1px) rotatez(45deg);
+  }
+
+  .nav-item {
+    @apply text-black text-base p-4;
+  }
+}
