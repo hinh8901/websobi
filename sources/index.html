@@ -8,35 +8,102 @@
   </head>
   <body>
     <header
-      class="sticky bg-[#ffffffcf] backdrop-blur-xs top-0 left-0 flex items-center justify-between px-4 shadow-[0px_2px_0px_rgb(17_17_26_/_7%)] z-10"
+      class="sticky bg-[#ffffffcf] backdrop-blur-xs top-0 left-0 flex items-center justify-between px-4 shadow-[0px_2px_0px_rgb(17_17_26_/_7%)] z-10 xl:flex-row xl:justify-between"
     >
-      <a href="/">
-        <img
-          src="./public/assets/images/websogi.webp"
-          alt="websoli logo"
-          class="max-w-[160px]"
-        />
-      </a>
+      <div class="xl:flex">
+        <a href="/">
+          <img
+            src="./public/assets/images/websogi.webp"
+            alt="websoli logo"
+            class="max-w-[160px]"
+          />
+        </a>
 
-      <nav
-        class="mb-menu bg-white absolute w-full h-0 overflow-hidden top-full left-0 duration-300 ease-out flex flex-col shadow-[0px_1px_0px_rgb(17_17_26_/_7%)]"
-      >
-        <div class="flex flex-col border-t border-[#e7e7e7]">
-          <a href="/" class="nav-item">Trang chủ</a>
-          <a href="" class="nav-item">Giao diện web</a>
-          <a href="" class="nav-item">Bảng giá</a>
-          <a href="" class="nav-item">Dự án</a>
-          <a href="" class="nav-item">Dịch vụ</a>
-          <a href="" class="nav-item">Tin tức</a>
-          <a href="" class="nav-item">Liên hệ</a>
-          <a href="" class="nav-item">Công vụ</a>
-        </div>
-        <a href="" class="bg-primary text-white text-sm p-4"
-          >Đăng ký tư vấn miễn phí</a
+        <nav
+          class="mb-menu bg-white absolute w-full h-0 overflow-auto top-full left-0 duration-300 ease-out flex flex-col shadow-[0px_1px_0px_rgb(17_17_26_/_7%)] xl:flex-row xl:relative xl:shadow-none xl:justify-end xl:bg-transparent xl:h-[77px]"
         >
-      </nav>
+          <ul
+            class="flex flex-col border-t border-[#e7e7e7] xl:flex-row xl:border-0"
+          >
+            <li class="block nav-item"><a href="/">Trang chủ</a></li>
+            <li class="block nav-item"><a href="">Giao diện web</a></li>
+            <li class="block nav-item"><a href="">Bảng giá</a></li>
+            <li class="block nav-item"><a href="">Dự án</a></li>
+            <li class="block nav-item">
+              <a
+                >Dịch vụ
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 nav-item-arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </a>
+              <ul class="sub-menu">
+                <li class="sub-nav-item"><a href="">Dịch vụ SEO</a></li>
+                <li class="sub-nav-item"><a href="">Dịch vụ Webmaster</a></li>
+                <li class="sub-nav-item"><a href="">Dịch vụ web</a></li>
+                <li class="sub-nav-item">
+                  <a href="">Dịch vụ server & VPS</a>
+                </li>
+                <li class="sub-nav-item"><a href="">Dịch vụ hosting</a></li>
+              </ul>
+            </li>
+            <li class="block nav-item"><a href="">Tin tức</a></li>
+            <li class="block nav-item"><a href="">Liên hệ</a></li>
+            <li class="block nav-item">
+              <a
+                >Công cụ
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 nav-item-arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </a>
+              <ul class="sub-menu">
+                <li class="sub-nav-item"><a href="">Định giá sơ bộ</a></li>
+                <li class="sub-nav-item"><a href="">Tính lãi suất</a></li>
+                <li class="sub-nav-item">
+                  <a href="">Tính giá hạ tần sơ bộ</a>
+                </li>
+                <li class="sub-nav-item"><a href="">Duyệt hồ sơ vay</a></li>
+                <li class="sub-nav-item"><a href="">Ứng dụng Photoshop</a></li>
+              </ul>
+            </li>
+          </ul>
 
-      <button class="mb-menu-trigger">
+          <a
+            href=""
+            class="bg-primary text-white text-sm p-4 xl:items-center xl:h-12 xl:hidden"
+            >Đăng ký tư vấn miễn phí</a
+          >
+        </nav>
+      </div>
+
+      <a
+        href=""
+        class="hidden bg-primary text-white text-sm p-4 xl:flex xl:items-center xl:h-12 self-center"
+        >Đăng ký tư vấn miễn phí</a
+      >
+
+      <button class="mb-menu-trigger xl:hidden">
         <span class="mb-menu-item"></span>
         <span class="mb-menu-item"></span>
         <span class="mb-menu-item"></span>
@@ -44,16 +111,70 @@
     </header>
 
     <main>
-      <section class="container py-4 flex flex-col gap-y-6">
-        <div class="flex flex-col gap-y-2">
+      <section id="home_carousel" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="aspect-video md:aspect-[3/1] relative">
+                <img
+                  src="./public/assets/images/banner-website-01-1-1536x480-1560x1170.jpg"
+                  alt="websobi"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute w-full h-full left-0 top-0">
+                  <a
+                    href=""
+                    class="bg-primary text-white absolute bottom-16 px-10 py-3 left-1/2 -translate-x-1/2"
+                    >Đăng ký ngay</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="aspect-video md:aspect-[3/1]">
+                <img
+                  src="./public/assets/images/banner_thuong_mai_dien_tu-1560x1170.jpg"
+                  alt="websobi"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="aspect-video md:aspect-[3/1]">
+                <img
+                  src="./public/assets/images/thiet-ke-web-chuyen-nghiep-ho-chi-minh-2-1560x1170.jpg"
+                  alt="websobi"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="aspect-video md:aspect-[3/1]">
+                <img
+                  src="./public/assets/images/thiet_ke_website_banner-thiet-ke-website-theo-yeu-cau-1-1560x1170.png"
+                  alt="websobi"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="container py-10 flex flex-col gap-y-6 lg:flex-row lg:gap-6 lg:flex-wrap lg:py-20"
+      >
+        <div class="flex flex-col gap-y-2 lg:w-[calc((100%-24px)/2)]">
           <div class="flex items-start gap-x-4">
             <img
               src="./public/assets/images/khachhang-canhan.png"
-              class="w-16 object-contain"
+              class="w-16 object-contain md:w-24"
             />
             <div class="flex flex-col gap-y-3">
-              <h3 class="text-dark text-xl font-se">Đăng ký tư vấn</h3>
-              <p class="text-xs text-black leading-5">
+              <h3 class="text-dark text-xl font-se md:text-3xl">
+                Đăng ký tư vấn
+              </h3>
+              <p class="text-xs text-black leading-5 md:text-base">
                 Tư vấn giải pháp và vận hành phần mềm theo nhu cầu mô hình vận
                 hành khách hàng, bảo mật an toàn thông tin cho quý khách
               </p>
@@ -61,7 +182,7 @@
           </div>
           <a
             href=""
-            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline md:text-base"
           >
             <span>Xem thêm</span>
             <svg
@@ -81,22 +202,24 @@
           </a>
         </div>
 
-        <div class="flex flex-col gap-y-2">
+        <div class="flex flex-col gap-y-2 lg:w-[calc((100%-24px)/2)]">
           <div class="flex items-start gap-x-4">
             <img
               src="./public/assets/images/naptien6.png"
-              class="w-16 object-contain"
+              class="w-16 object-contain md:w-24"
             />
             <div class="flex flex-col gap-y-3">
-              <h3 class="text-dark text-xl font-se">Cung cấp giải pháp</h3>
-              <p class="text-xs text-black leading-5">
+              <h3 class="text-dark text-xl font-se md:text-3xl">
+                Cung cấp giải pháp
+              </h3>
+              <p class="text-xs text-black leading-5 md:text-base">
                 Cung cấp giải pháp bán hàng, quản lý kho hàng
               </p>
             </div>
           </div>
           <a
             href=""
-            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline md:text-base"
           >
             <span>Xem thêm</span>
             <svg
@@ -116,17 +239,17 @@
           </a>
         </div>
 
-        <div class="flex flex-col gap-y-2">
+        <div class="flex flex-col gap-y-2 lg:w-[calc((100%-24px)/2)]">
           <div class="flex items-start gap-x-4">
             <img
               src="./public/assets/images/napvi.png"
-              class="w-16 object-contain"
+              class="w-16 object-contain md:w-24"
             />
             <div class="flex flex-col gap-y-3">
-              <h3 class="text-dark text-xl font-se">
+              <h3 class="text-dark text-xl font-se md:text-3xl">
                 Chuyển đổi số doanh nghiệp
               </h3>
-              <p class="text-xs text-black leading-5">
+              <p class="text-xs text-black leading-5 md:text-base">
                 Doanh nghiệp bạn đang rườm rà quy trình, muốn tự động hóa, giảm
                 bớt rủi ro, tăng mức đo lường nâng cấp quy mô
               </p>
@@ -134,7 +257,7 @@
           </div>
           <a
             href=""
-            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline md:text-base"
           >
             <span>Xem thêm</span>
             <svg
@@ -154,22 +277,24 @@
           </a>
         </div>
 
-        <div class="flex flex-col gap-y-2">
+        <div class="flex flex-col gap-y-2 lg:w-[calc((100%-24px)/2)]">
           <div class="flex items-start gap-x-4">
             <img
               src="./public/assets/images/naptien3.png"
-              class="w-16 object-contain"
+              class="w-16 object-contain md:w-24"
             />
             <div class="flex flex-col gap-y-3">
-              <h3 class="text-dark text-xl font-se">Thiết kế website</h3>
-              <p class="text-xs text-black leading-5">
+              <h3 class="text-dark text-xl font-se md:text-3xl">
+                Thiết kế website
+              </h3>
+              <p class="text-xs text-black leading-5 md:text-base">
                 Thiết kế website theo nhu cầu khách hàng
               </p>
             </div>
           </div>
           <a
             href=""
-            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline"
+            class="text-sm text-primary flex items-center gap-x-2 w-fit self-end hover:underline md:text-base"
           >
             <span>Xem thêm</span>
             <svg
@@ -191,23 +316,29 @@
       </section>
 
       <section
-        class="container py-4 bg-[url('./public/assets/images/bg-loiich.jpg')] bg-no-repeat bg-cover"
+        class="container py-4 bg-[url('./public/assets/images/bg-loiich.jpg')] bg-no-repeat bg-cover lg:relative lg:aspect-[3/1]"
       >
-        <div class="bg-[#ffffff7d] backdrop-blur-xs">
-          <h3 class="p-8">
-            <span class="text-lg font-light text-dark"
+        <div
+          class="bg-[#ffffff7d] backdrop-blur-xs md:flex lg:absolute lg:top-0 lg:right-0 lg:w-fit lg:max-w-[90%]"
+        >
+          <h3 class="p-8 md:shrink-0">
+            <span class="text-lg font-light text-dark md:text-2xl"
               >Tiện ích khi sử dụng</span
             >
-            <span class="block text-2xl">Dịch vụ Web Sobiz</span>
-            <span class="block w-10 h-0.5 rounded-xs bg-primary mt-2"></span>
+            <span class="block text-2xl md:text-3xl">Dịch vụ Web Sobiz</span>
+            <span
+              class="block w-10 h-0.5 rounded-xs bg-primary mt-2 md:w-20"
+            ></span>
           </h3>
-          <div class="bg-[#f7f7f7] p-8 flex flex-col gap-y-6">
-            <div class="flex gap-x-1.5">
+          <div
+            class="bg-[#f7f7f7] p-8 flex flex-col gap-6 lg:flex-row lg:flex-wrap"
+          >
+            <div class="flex gap-x-1.5 lg:w-[calc((100%-24px)/2)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="#78B774"
-                class="size-8 shrink-0"
+                class="size-8 shrink-0 md:size-12"
               >
                 <path
                   fill-rule="evenodd"
@@ -216,17 +347,17 @@
                 />
               </svg>
 
-              <p class="text-sm text-dark">
+              <p class="text-sm text-dark md:text-base">
                 Kết nối với hơn 20 đơn vị vận chuyển và cổng thanh toán online
               </p>
             </div>
 
-            <div class="flex gap-x-1.5">
+            <div class="flex gap-x-1.5 lg:w-[calc((100%-24px)/2)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="#78B774"
-                class="size-8 shrink-0"
+                class="size-8 shrink-0 md:size-12"
               >
                 <path
                   fill-rule="evenodd"
@@ -235,18 +366,18 @@
                 />
               </svg>
 
-              <p class="text-sm text-dark">
+              <p class="text-sm text-dark md:text-base">
                 <span class="font-semibold">Miễn phí</span> sử dụng bộ công cụ
                 của websobiz trong lĩnh vực đầu tư bất động sản
               </p>
             </div>
 
-            <div class="flex gap-x-1.5">
+            <div class="flex gap-x-1.5 lg:w-[calc((100%-24px)/2)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="#78B774"
-                class="size-8 shrink-0"
+                class="size-8 shrink-0 md:size-12"
               >
                 <path
                   fill-rule="evenodd"
@@ -255,19 +386,19 @@
                 />
               </svg>
 
-              <p class="text-sm text-dark">
+              <p class="text-sm text-dark md:text-base">
                 <span class="font-semibold">Miễn phí</span> tư vấn và cung cấp
                 giải pháp chuyển đổi số, phù hợp nhu cầu doanh nghiệp của quý
                 khách
               </p>
             </div>
 
-            <div class="flex gap-x-1.5">
+            <div class="flex gap-x-1.5 lg:w-[calc((100%-24px)/2)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="#78B774"
-                class="size-8 shrink-0"
+                class="size-8 shrink-0 md:size-12"
               >
                 <path
                   fill-rule="evenodd"
@@ -276,7 +407,7 @@
                 />
               </svg>
 
-              <p class="text-sm text-dark">
+              <p class="text-sm text-dark md:text-base">
                 Cung cấp các giải pháp mở rộng doanh nghiệp, đầu tư & kinh doanh
                 công nghệ 4.0
               </p>
@@ -285,9 +416,9 @@
         </div>
       </section>
 
-      <section class="container pt-8">
-        <div class="flex flex-col gap-y-5">
-          <div class="aspect-[16/9] relative">
+      <section class="container pt-8 md:pt-12">
+        <div class="flex flex-col gap-5 sm:flex-row">
+          <div class="aspect-video relative">
             <img
               src="./public/assets/images/img3_thumbvideo-600x350.jpg"
               class="w-full h-full object-cover"
@@ -299,7 +430,7 @@
               <img
                 src="./public/assets/images/btn-play1.png"
                 alt="play 1"
-                class="animate-spin animate-bounce"
+                class="animate-spin"
               />
               <img
                 src="./public/assets/images/btn-play2.png"
@@ -310,51 +441,59 @@
           </div>
 
           <div class="flex flex-col gap-y-5">
-            <h3 class="text-2xl text-dark">
-              Tư vấn và kết nối tạo nguồn vốn
-              <span class="block text-lg font-light"
-                >Kích hoạt dòng tài chính tiếp sức kinh doanh</span
-              >
-            </h3>
-            <p class="text-sm text-dark">
-              Hỗ trợ quý khách tìm nguồn vốn kinh doanh từ tín dụng và thế chấp
-              giới thiệu đến các ngân hàng uy tín, giải đáp thắc mắc tài chính
-              trong lúc kinh doanh bị thiếu vốn.
-            </p>
-          </div>
-
-          <div class="flex justify-between gap-y-8 items-start">
-            <div
-              class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
-            >
-              <p class="text-secondary text-xl font-bold text-center">
-                1 Nghìn
+            <div class="flex flex-col gap-y-5">
+              <h3 class="text-2xl text-dark md:text-3xl">
+                Tư vấn và kết nối tạo nguồn vốn
+                <span class="block text-lg font-light md:text-xl"
+                  >Kích hoạt dòng tài chính tiếp sức kinh doanh</span
+                >
+              </h3>
+              <p class="text-sm text-dark md:text-base">
+                Hỗ trợ quý khách tìm nguồn vốn kinh doanh từ tín dụng và thế
+                chấp giới thiệu đến các ngân hàng uy tín, giải đáp thắc mắc tài
+                chính trong lúc kinh doanh bị thiếu vốn.
               </p>
-              <span class="text-muted text-xs text-center"
-                >Ví điện tử kích hoạt</span
-              >
             </div>
 
-            <div
-              class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
-            >
-              <p class="text-secondary text-xl font-bold text-center">
-                5 Nghìn
-              </p>
-              <span class="text-muted text-xs text-center"
-                >Lượt vận đơn/ngày được tin dùng</span
+            <div class="flex justify-between gap-y-8 items-start">
+              <div
+                class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
               >
-            </div>
+                <p
+                  class="text-secondary text-xl font-bold text-center md:text-2xl"
+                >
+                  1 Nghìn
+                </p>
+                <span class="text-muted text-xs text-center md:text-base"
+                  >Ví điện tử kích hoạt</span
+                >
+              </div>
 
-            <div
-              class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
-            >
-              <p class="text-secondary text-xl font-bold text-center">
-                10 Tỉ VND
-              </p>
-              <span class="text-muted text-xs text-center"
-                >Giao dịch từ hệ thống thanh toán/tháng</span
+              <div
+                class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
               >
+                <p
+                  class="text-secondary text-xl font-bold text-center md:text-2xl"
+                >
+                  5 Nghìn
+                </p>
+                <span class="text-muted text-xs text-center md:text-base"
+                  >Lượt vận đơn/ngày được tin dùng</span
+                >
+              </div>
+
+              <div
+                class="flex flex-col items-center justify-center w-[calc((100%-64px)/3)]"
+              >
+                <p
+                  class="text-secondary text-xl font-bold text-center md:text-2xl"
+                >
+                  10 Tỉ VND
+                </p>
+                <span class="text-muted text-xs text-center md:text-base"
+                  >Giao dịch từ hệ thống thanh toán/tháng</span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -362,14 +501,18 @@
 
       <section class="container pt-8">
         <h2
-          class="text-secondary text-lg pl-3 relative border-b border-primary before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-1.5 before:bg-primary"
+          class="text-secondary text-lg pl-3 relative border-b border-primary before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-1.5 before:bg-primary md:text-xl"
         >
           <a href="" class="hover:text-primary">Thông báo & sự kiện</a>
         </h2>
 
-        <div class="flex flex-col gap-10 py-4">
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+        <div
+          class="flex flex-col gap-10 sm:gap-4 py-4 sm:flex-row sm:flex-wrap"
+        >
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -397,8 +540,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -426,8 +571,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -455,8 +602,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -484,8 +633,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -513,8 +664,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -542,8 +695,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -571,8 +726,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -600,8 +757,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -629,8 +788,10 @@
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <div class="w-full aspect-[16/9]">
+          <div
+            class="flex flex-col sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-48px)/4)]"
+          >
+            <div class="w-full aspect-video">
               <img
                 src="./public/assets/images/website ban hang online - websobi-350x200.png"
                 alt="websobi"
@@ -660,7 +821,7 @@
         </div>
       </section>
 
-      <section class="container py-4 bg-[#F8F8F8]">
+      <section class="container py-4 bg-[#F8F8F8] lg:py-10">
         <h3 class="text-2xl text-dark">
           Hỗ trợ quý khách hàng
           <span class="text-dark block font-light text-lg">
@@ -669,7 +830,9 @@
           </span>
         </h3>
         <ul class="mt-4 flex flex-wrap gap-4">
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -677,7 +840,9 @@
               <img src="./public/assets/images/abb.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -685,7 +850,9 @@
               <img src="./public/assets/images/acb.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -693,7 +860,9 @@
               <img src="./public/assets/images/agri.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -701,7 +870,9 @@
               <img src="./public/assets/images/baca.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -709,7 +880,9 @@
               <img src="./public/assets/images/baoviet.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -717,7 +890,9 @@
               <img src="./public/assets/images/bidv.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -725,7 +900,9 @@
               <img src="./public/assets/images/donga.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -733,7 +910,9 @@
               <img src="./public/assets/images/exim.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -741,7 +920,9 @@
               <img src="./public/assets/images/gp.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -749,7 +930,9 @@
               <img src="./public/assets/images/hd.png" alt="" />
             </a>
           </li>
-          <li class="aspect-[16/9] w-[calc((100%-32px)/3)]">
+          <li
+            class="aspect-video w-[calc((100%-48px)/4)] md:w-[calc((100%-64px)/5)] lg:md:w-[calc((100%-80px)/6)] xl:md:w-[calc((100%-96px)/7)]"
+          >
             <a
               href=""
               class="h-full w-full flex items-center justify-center p-2 border border-[#dedede] hover:border-[#3b82f680] grayscale-100 hover:grayscale-0"
@@ -762,125 +945,169 @@
     </main>
 
     <footer class="py-8">
-      <div class="flex flex-col container">
-        <h3 class="text-dark text-sm font-semibold">
-          Giải pháp website và chuyển đổi số doanh nghiệp
-        </h3>
-        <div class="mt-2">
-          <p class="flex flex-col gap-1 text-xs text-dark">
-            <span>- Cở sở 1: 189 Nguyễn Thị Minh Khai, Q.1, TP.HCM</span>
-            <span>Số điện thoại: 0903.388.899</span>
-            <span>Thứ 2 - Thứ 6: 8h30 - 17h30</span>
-            <span>Thứ 7 - Chủ nhật: 9h30 - 17h00</span>
-            <span
-              >Sức khoẻ và làm đẹp, chuyên cung cấp các sản phẩm tốt nhất cho
-              quý khách hàng.</span
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="mt-6 flex flex-col gap-6 container">
-        <div>
-          <h3 class="text-dark uppercase text-sm font-semibold">
-            Dịch vụ thiết kế website
+      <div class="container px-0 flex flex-col xl:flex-row">
+        <div class="flex flex-col container">
+          <h3 class="text-dark text-sm font-semibold md:text-base">
+            Giải pháp website và chuyển đổi số doanh nghiệp
           </h3>
-          <ul>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Thiết kế webiste bất động sản</a
+          <div class="mt-2">
+            <p class="flex flex-col gap-1 text-xs text-dark md:text-sm">
+              <span>- Cở sở 1: 189 Nguyễn Thị Minh Khai, Q.1, TP.HCM</span>
+              <span>Số điện thoại: 0903.388.899</span>
+              <span>Thứ 2 - Thứ 6: 8h30 - 17h30</span>
+              <span>Thứ 7 - Chủ nhật: 9h30 - 17h00</span>
+              <span
+                >Sức khoẻ và làm đẹp, chuyên cung cấp các sản phẩm tốt nhất cho
+                quý khách hàng.</span
               >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Thiết kế webiste bất nội thất</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Thiết kế webiste bán hàng</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Thiết kế webiste du lịch</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Thiết kế webiste xây dựng</a
-              >
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h3 class="text-dark uppercase text-sm font-semibold">
-            Dịch vụ khác
-          </h3>
-          <ul>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Dịch vụ webmaster</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Dịch vụ SEO</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Dịch vụ thiết kế</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Dịch vụ tư vấn chuyển đổi số</a
-              >
-            </li>
-          </ul>
-        </div>
+        <div
+          class="mt-6 flex flex-col gap-6 container md:flex-row md:gap-20 xl:mt-0"
+        >
+          <div>
+            <h3 class="text-dark uppercase text-sm font-semibold md:text-base">
+              Dịch vụ thiết kế website
+            </h3>
+            <ul class="md:mt-2 md:flex md:flex-col md:gap-2">
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Thiết kế webiste bất động sản</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Thiết kế webiste bất nội thất</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Thiết kế webiste bán hàng</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Thiết kế webiste du lịch</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Thiết kế webiste xây dựng</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <h3 class="text-dark uppercase text-sm font-semibold">Giới thiệu</h3>
-          <ul>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Liên hệ</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Về chúng tôi</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Tuyển dụng</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Đối tác của chúng tôi</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-dark hover:text-primary text-sm"
-                >Video về chúng tôi</a
-              >
-            </li>
-          </ul>
+          <div>
+            <h3 class="text-dark uppercase text-sm font-semibold md:text-base">
+              Dịch vụ khác
+            </h3>
+            <ul class="md:mt-2 md:flex md:flex-col md:gap-2">
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Dịch vụ webmaster</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Dịch vụ SEO</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Dịch vụ thiết kế</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Dịch vụ tư vấn chuyển đổi số</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-dark uppercase text-sm font-semibold md:text-base">
+              Giới thiệu
+            </h3>
+            <ul class="md:mt-2 md:flex md:flex-col md:gap-2">
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Liên hệ</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Về chúng tôi</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Tuyển dụng</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Đối tác của chúng tôi</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-dark hover:text-primary text-sm md:text-base"
+                  >Video về chúng tôi</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div class="h-[1px] w-full bg-[#f1f1f2] my-6"></div>
 
-      <div class="container">
-        <p class="text-muted text-sm">Bản quyền thuộc quyền sở hữu của websobi.com</p>
-        <div class="flex flex-wrap gap-4 mt-3">
-          <img class="w-12" src="./public/assets/images/seal_125-50_blue.png" alt="">
-          <img class="w-12" src="./public/assets/images/credibility_pci-logo.png" alt="">
+      <div class="container xl:flex xl:justify-between">
+        <p class="text-muted text-sm md:text-base">
+          Bản quyền thuộc quyền sở hữu của websobi.com
+        </p>
+        <div class="flex flex-wrap gap-4 mt-3 xl:mt-0">
+          <img
+            class="w-12 md:w-18"
+            src="./public/assets/images/seal_125-50_blue.png"
+            alt=""
+          />
+          <img
+            class="w-12 md:w-18"
+            src="./public/assets/images/credibility_pci-logo.png"
+            alt=""
+          />
         </div>
       </div>
     </footer>
@@ -903,6 +1130,39 @@
             }
           })
       })()
+      ;(function addSubMenuEvent() {
+        document.querySelectorAll(".nav-item").forEach((elm) => {
+          const subMenuElm = elm.querySelector(".sub-menu")
+          if (!subMenuElm) return
+
+          elm.addEventListener("click", function () {
+            const isActiveSubMenu = this.classList.contains("active")
+            if (isActiveSubMenu) {
+              this.classList.remove("active")
+              subMenuElm.style.maxHeight = 0
+            } else {
+              this.classList.add("active")
+              subMenuElm.style.maxHeight = subMenuElm.scrollHeight + "px"
+            }
+          })
+        })
+
+        document.addEventListener("click", function(event) {
+          document.querySelectorAll(".sub-menu").forEach((elm) => {
+            const parent = elm.closest(".nav-item")
+            const isOpenSubMenu = parent.classList.contains("active")
+
+            if (!isOpenSubMenu) return
+
+            if (elm.contains(event.target) || parent.contains(event.target)) return
+
+            parent.classList.remove("active")
+            elm.style.maxHeight = 0
+          })
+        })
+      })()
     </script>
+
+    <script type="module" src="./home_carousel.js"></script>
   </body>
 </html>

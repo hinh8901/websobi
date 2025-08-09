@@ -4,7 +4,7 @@
   --color-primary: #c2a147;
   --color-black: #1a1a1a;
   --color-dark: #333333;
-  --color-secondary: #315C98;
+  --color-secondary: #315c98;
   --color-accent: "#78B774";
   --color-muted: "#555";
 
@@ -17,7 +17,10 @@
 
 @layer utilities {
   .container {
-    @apply px-4
+    @apply px-4;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mb-menu-open {
@@ -62,6 +65,50 @@
   }
 
   .nav-item {
-    @apply text-black text-base p-4;
+    @apply relative text-black text-base cursor-pointer hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary;
+  }
+
+  .nav-item.active {
+    @apply bg-[#e7e7e7] hover:text-black;
+  }
+
+  .nav-item .nav-item-arrow {
+    @apply duration-200 xl:ml-1.5;
+  }
+
+  .nav-item.active .nav-item-arrow {
+    @apply rotate-180;
+  }
+
+  .nav-item a {
+    @apply p-4 w-full flex items-center justify-between xl:h-full;
+  }
+
+  .sub-menu {
+    @apply overflow-hidden duration-300 max-h-0 xl:fixed xl:bg-[#e7e7e7] xl:text-dark xl:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.05)];
+  }
+
+  .sub-nav-item {
+    @apply hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary;
+  }
+
+  /* Pagination */
+  #home_carousel .splide__pagination {
+    @apply absolute flex justify-center w-full bottom-3;
+  }
+
+  #home_carousel .splide__pagination {
+    @apply flex flex-wrap gap-1.5;
+  }
+
+  #home_carousel .splide__pagination li[role="presentation"] button {
+    @apply w-3 h-3 border border-primary bg-transparent rounded-full;
+  }
+
+  #home_carousel
+    .splide__pagination
+    li[role="presentation"]
+    button[aria-selected="true"] {
+    @apply bg-primary;
   }
 }
